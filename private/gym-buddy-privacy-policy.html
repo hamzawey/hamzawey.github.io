@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GymBuddy Privacy Policy</title>
+  <style>
+    body {
+      margin: 0;
+      color: #2a211d;
+      background: #fbf6f2;
+      font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    h1 { font-size: 1.85rem; margin: 0 0 0.35rem; }
+    h2 { font-size: 1.2rem; margin: 2rem 0 0.6rem; }
+    p, li { color: #3a302a; }
+    .meta { color: #7c6f68; font-size: 0.95rem; }
+    a { color: #e8421f; }
+    ul { padding-left: 1.2rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>GymBuddy Privacy Policy</h1>
+  <p class="meta">Effective date: 2 September 2026<br>
+    Developer: Mostafa Hamza (“we”, “us”)</p>
+
+  <p>GymBuddy is a workout logger. You photograph a gym board or notebook, and the app turns that into a structured session you can edit, save, and share. This policy describes what the app uses, what stays on your device, and what is sent over the internet.</p>
+
+  <h2>1. No account</h2>
+  <p>GymBuddy does not create user accounts, and we do not operate a GymBuddy backend that stores your workouts. There is no sign-in with Google, Apple, or social networks.</p>
+
+  <h2>2. Data stored on your device</h2>
+  <p>The following stays in GymBuddy’s private app storage on your phone or tablet unless you export or share it yourself:</p>
+  <ul>
+    <li>Workouts, exercises, sets, reps, dates, and notes you log or edit</li>
+    <li>Training plans you import or build</li>
+    <li>Photos of boards, plan pages, and share-card images you save in the app</li>
+    <li>Settings such as theme, and an OpenRouter API key if you enter one</li>
+    <li>A count of free AI extractions used with the built-in quota</li>
+  </ul>
+  <p>Uninstalling GymBuddy deletes this app data. We cannot recover it.</p>
+
+  <h2>3. Camera, photos, and files</h2>
+  <p>GymBuddy asks for camera and photo-library access only to:</p>
+  <ul>
+    <li>Photograph a workout board or a share selfie</li>
+    <li>Pick an existing photo or screenshot of a board or training plan</li>
+    <li>Import a PDF plan you choose</li>
+    <li>Save a share card to Photos when you tap that option</li>
+  </ul>
+  <p>We do not access your library in the background or upload your camera roll. You choose each photo or file.</p>
+
+  <h2>4. On-device text recognition</h2>
+  <p>Board and plan images are first read on the device (Apple Vision on iOS; Google ML Kit on Android). That step does not send the image to us.</p>
+
+  <h2>5. Optional cloud AI (OpenRouter)</h2>
+  <p>If AI extraction is available (your own OpenRouter key, or the limited built-in quota), GymBuddy sends a <strong>downscaled copy of the image you selected</strong> plus optional on-device OCR text to OpenRouter at <code>https://openrouter.ai/api/v1/chat/completions</code>. OpenRouter and the model provider it uses (for example a Google or Qwen vision model) process that content to return structured workout or plan text.</p>
+  <p>Do not photograph anything you do not want a third-party AI provider to process (for example other people’s faces, IDs, or unrelated documents). If the network is unavailable, GymBuddy may fall back to on-device parsing and will not send the image.</p>
+  <p>Your optional OpenRouter key is stored only on the device and is sent to OpenRouter as an authorization header when you use AI. We do not collect that key.</p>
+  <p>OpenRouter’s own policy applies to what they retain: <a href="https://openrouter.ai/privacy">openrouter.ai/privacy</a>.</p>
+
+  <h2>6. Apple Health and Health Connect</h2>
+  <p>If you turn on health sync, GymBuddy may <strong>write</strong> workouts you logged (title, timing, and activity type) to Apple Health (iOS) or Health Connect (Android). This is optional. GymBuddy is not designed to read your other health history (heart rate, sleep, workouts from other apps, and so on). You can disconnect sync in the app and revoke access in system settings. Data already written to Apple Health or Health Connect is then governed by Apple or Google, not by GymBuddy.</p>
+
+  <h2>7. Sharing</h2>
+  <p>If you share a workout or save a card to Photos, the image and any caption you send leave the app through the system share sheet or Photos. Recipients and those apps have their own policies. We do not operate a social network and we do not post for you.</p>
+
+  <h2>8. What we do not do</h2>
+  <ul>
+    <li>No advertising SDKs and no ads in the app</li>
+    <li>No analytics, crash-reporting, or advertising identifiers collected by us</li>
+    <li>No sale of personal data</li>
+    <li>No tracking of testers or users across other companies’ apps</li>
+  </ul>
+
+  <h2>9. Children</h2>
+  <p>GymBuddy is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+
+  <h2>10. Security and retention</h2>
+  <p>Workouts and photos live on your device. Cloud AI requests use HTTPS. We do not keep a copy of your boards on our servers because we do not run workout hosting. Third parties named above retain data according to their policies.</p>
+
+  <h2>11. Your choices</h2>
+  <ul>
+    <li>Deny camera, photos, or health permission in system settings (related features will not work)</li>
+    <li>Skip AI and log workouts manually, or use on-device parsing when AI is off</li>
+    <li>Remove your OpenRouter key in Settings</li>
+    <li>Delete workouts, share cards, or the app itself</li>
+  </ul>
+  <p>Because we do not host your log, we cannot remotely delete device data; you delete it on the device.</p>
+
+  <h2>12. Changes</h2>
+  <p>If this policy changes in a material way, we will update the effective date on this page. Continued use of GymBuddy after an update means you accept the revised policy.</p>
+
+  <h2>13. Contact</h2>
+  <p>Questions about this policy: open an issue at <a href="https://github.com/hamzawey/gymbuddy/issues">github.com/hamzawey/gymbuddy/issues</a>, or use the email listed under App support on the GymBuddy Google Play / App Store listing.</p>
+  <p class="meta">GymBuddy is a training log, not medical advice. This page is provided so stores and users can see how the app handles data; it is not formal legal counsel.</p>
+</main>
+</body>
+</html>
